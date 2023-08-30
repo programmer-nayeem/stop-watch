@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stop Watch</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                background:radial-gradient(rgb(248, 149, 162) , rgb(245, 72, 110));
+            }
+
+            .stopwatch {
+                font-size: 4rem;
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            button {
+                margin-top: 10px;
+                padding: 5px 10px;
+                font-size: 2rem;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="stopwatch">
+            <div id="time">00:00:00</div>
+            <button id="startPause">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
